@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz Gammes</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <h2 id="question"></h2>
+
+      <p>Relative :</p>
+      <div id="relative"></div>
+
+      <p>Altérations :</p>
+      <div id="alterationType"></div>
+      <div id="alterations"></div>
+
+      <p>Notes :</p>
+      <div id="notes"></div>
+
+      <br />
+      <button onclick="validate()">Valider</button>
+      <button onclick="nextQuestion()">Question suivante</button>
+
+      <h3 id="result"></h3>
+
+      <p>Score :</p>
+      <p>✅ <span id="correct">0</span> | ❌ <span id="wrong">0</span></p>
+    </div>
+    <script src="./scripts.js"></script>
+  </body>
+</html>
