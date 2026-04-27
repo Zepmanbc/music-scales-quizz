@@ -27,3 +27,20 @@ button {
 .wrong {
   color: #f44336;
 }
+
+.notes-grid {
+  max-width: 98%;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 5px;
+  margin-bottom: 5px;
+}
+
+.notes-grid button {
+  width: 100%;
+}
+
+p {
+  margin-top: 12px;
+  margin-bottom: 12px;
+}

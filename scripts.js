@@ -224,6 +224,7 @@ function renderOptions() {
 
   notesGroups.forEach((group) => {
     const row = document.createElement("div");
+    row.classList.add("notes-grid");
 
     group.forEach((note) => {
       const btn = document.createElement("button");
@@ -287,6 +288,7 @@ function renderOptions() {
 
   notesGroups.forEach((group) => {
     const row = document.createElement("div");
+    row.classList.add("notes-grid");
 
     group.forEach((n) => {
       let btn = document.createElement("button");
