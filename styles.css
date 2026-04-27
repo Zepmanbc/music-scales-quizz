@@ -3,6 +3,17 @@ body {
   text-align: center;
   background: #111;
   color: white;
+  margin: 0;
+}
+
+h3,
+h2 {
+  margin: 5px;
+}
+
+p {
+  margin-top: 8px;
+  margin-bottom: 8px;
 }
 
 .container {
@@ -38,9 +49,4 @@ button {
 
 .notes-grid button {
   width: 100%;
-}
-
-p {
-  margin-top: 12px;
-  margin-bottom: 12px;
 }
