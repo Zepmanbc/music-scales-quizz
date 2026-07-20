@@ -208,6 +208,8 @@ function nextQuestion() {
   document.getElementById("question").innerText = current.ton;
 
   console.log("QUESTION CHOISIE :", current);
+  document.getElementById("btn-nextQuestion").style.display = "none";
+  document.getElementById("btn-validate").style.display = "grid";
   renderOptions();
 }
 
@@ -355,6 +357,8 @@ function validate() {
     correct++;
     document.getElementById("result").innerText = "Correct !";
     document.getElementById("result").className = "correct";
+    document.getElementById("btn-nextQuestion").style.display = "grid";
+    document.getElementById("btn-validate").style.display = "none";
   } else {
     wrong++;
     document.getElementById("result").innerText = "Faux !";
