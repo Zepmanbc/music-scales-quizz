@@ -353,6 +353,7 @@ function validate() {
   }
 
   // Résultat
+  showFeedback(ok);
   if (ok) {
     correct++;
     document.getElementById("result").innerText = "Correct !";
@@ -376,6 +377,19 @@ function sameNotes(a, b) {
   const sortedB = [...b].sort();
 
   return sortedA.every((note, i) => note === sortedB[i]);
+}
+
+function showFeedback(success) {
+  const feedback = document.createElement("div");
+
+  feedback.className = "result-feedback";
+  feedback.textContent = success ? "✅" : "❌";
+
+  document.body.appendChild(feedback);
+
+  setTimeout(() => {
+    feedback.remove();
+  }, 1000);
 }
 
 // START
